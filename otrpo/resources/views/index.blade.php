@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ОТРПО_2_Филюиин</title>
+        <script src="https://unpkg.com/lodash@4.17.20"></script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+
+    </head>
+    <body>
+    
+<script src="{{ asset('js/main.js') }}" defer></script>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d8572a; padding: 0;">
+            <div class="container-fluid" style="padding: 0 1rem;"> <!-- только внутренние отступы -->
+              <a class="navbar-brand" href="#">
+                <img src="https://free-png.ru/wp-content/uploads/2022/09/free-png.ru-107.png" alt="Логотип" width="30" height="30">
+              </a>
+              <span class="header-text" style="color: white; margin-left: 10px;">Персонажи из аниме Наруто</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <button id="btn-upload" class="btn btn-primary header-button">Меню</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-3 row-cols-xxxl-5 gx-3 gy-5">
+    <!-- Карточка 1 -->
+     <div class="col">
+      <div class="card h-100">
+        <img src="https://wikimultia.org/images/thumb/d/dd/Naruto_Uzumaki%21%21.png/1200px-Naruto_Uzumaki%21%21.png" class="card-img-top img-fluid" alt="Наруто Узумаки">
+        <div class="card-body">
+          <h5 class="card-title">Наруто Узумаки</h5>
+          <p class="card-text">Главный герой вселенной...</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNaruto">Подробнее</button>
+        </div> 
+      </div>
+    </div>
+    <!-- Модальное окно для Наруто -->
+     <div class="modal fade" id="modalNaruto" tabindex="-1" aria-labelledby="modalNarutoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Заголовок модалки -->
+           <div class="modal-header">
+            <h5 class="modal-title" id="modalNarutoLabel">Наруто Узумаки</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <!-- Основной контент модалки -->
+           <div class="modal-body">
+             <img src="https://wikimultia.org/images/thumb/d/dd/Naruto_Uzumaki%21%21.png/1200px-Naruto_Uzumaki%21%21.png" class="card-img-top img-fluid" alt="Наруто Узумаки">
+            <p>
+              Наруто Узумаки - (яп. うずまきナルト, Узумаки Наруто) — шиноби Деревни Скрытого Листа. Главный персонаж вселенной. В день своего рождения стал джинчуурики Девятихвостого Демона-Лиса — судьба, из-за которой он стал изгоем для большей части людей в Конохе на протяжении всего своего детства. После присоединения к команде Какаши, Наруто упорно трудился, чтобы получить признание всех в деревне и исполнить свою заветную мечту стать Хокаге. В последующие годы, благодаря многим трудностям и испытаниям, он стал способным ниндзя, которого считали героем Конохагакуре, и после во всем мире, он стал известен как Герой Скрытого Листа (яп. 木ノ葉隠れの英雄, Конохагакуре но Эйю). Вскоре, он оказался одним из ключевых факторов победы в Четвертой Мировой Войне Шиноби, что в конце-концов привело его к достижению своей мечты, когда он стал Седьмым Хокаге (яп. 七代目火影, Нанадаймэ Хокаге; досл. Тень Огня Седьмого Поколения).
+            </p>
+            <p>
+              <span data-bs-toggle="popover" data-bs-trigger="hover" title="Факт" data-bs-content="Наруто стал 7-м Хокаге.">
+                Интересный факт
+              </span>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Карточка 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://abrakadabra.fun/uploads/posts/2022-01/1643430356_1-abrakadabra-fun-p-saske-uchikha-skrinshoti-iz-anime-10.png"
+             class="card-img-top img-fluid" alt="Саске Учиха">
+        <div class="card-body">
+          <h5 class="card-title">Саске Учиха</h5>
+          <p class="card-text">Последний Учиха, мститель...</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSaske">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <!-- Модальное окно для Саске -->
+     <div class="modal fade" id="modalSaske" tabindex="-1" aria-labelledby="modalSaskeLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Заголовок модалки -->
+           <div class="modal-header">
+            <h5 class="modal-title" id="modalSaskeLabel">Саске Учиха</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <!-- Основной контент модалки -->
+           <div class="modal-body">
+                    <img src="https://abrakadabra.fun/uploads/posts/2022-01/1643430356_1-abrakadabra-fun-p-saske-uchikha-skrinshoti-iz-anime-10.png"
+             class="card-img-top img-fluid" alt="Саске Учиха">
+            <p>
+            Саске Учиха (яп. うちはサスケ, Учиха Сасукэ) — один из последних выживших членов клана Учиха из Деревни Скрытого Листа.
+                     После того, как его старший брат Итачи вырезал весь их клан, Саске поставил перед собой жизненную цель отомстить за клан и семью, убив Итачи.
+                      Он попадает в Команду 7, когда становится ниндзя, и благодаря состязаниям со своим соперником и лучшим другом, Наруто Узумаки, начинает оттачивать свои навыки.
+                       Недовольный своим прогрессом, он покидает Лист, чтобы обрести силу, необходимую для осуществления мести.
+                        Годы, проведённые в поисках мести, стали невероятно взыскательными и неразумными, равно как и изолировали его от других, из-за чего он вскоре становится международным преступником.
+                         После того, как Саске сыграл одну из ключевых ролей в окончании Четвёртой Мировой Войны Шиноби, а Наруто смог избавить его от ненависти, он решает вернуться в Скрытый Лист и посвящает свою жизнь 
+                         защите деревни и её жителей — таким образом, он становится известен под прозвищем "Поддерживающий Каге" (яп. 支う影, Сасаукагэ, Буквальное значение: Поддерживающая Тень).
+                        </p>
+                        <p>
+                          <span data-bs-toggle="popover" data-bs-trigger="hover" title="Факт" data-bs-content="Является последним в семействе Учиха.">
+                            Интересный факт
+                          </span>
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Карточка 3 -->
+                 <div class="col">
+                  <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3oMzEGeXAS5Mm73Y5CeDBetfvtn3KR6Uiw&s"
+                    class="card-img-top img-fluid" alt="Сакура Харуно">
+                    <div class="card-body">
+                      <h5 class="card-title">Сакура Харуно</h5>
+                      <p class="card-text"> Став частью Команды 7, Сакура быстро осознаёт...</p>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSakura">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+            <!-- Модальное окно для Сакуры -->
+             <div class="modal fade" id="modalSakura" tabindex="-1" aria-labelledby="modalSakuraLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      <!-- Заголовок модалки -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSakuraLabel">Сакура Учиха</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+
+      <!-- Основной контент модалки -->
+      <div class="modal-body">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3oMzEGeXAS5Mm73Y5CeDBetfvtn3KR6Uiw&s"
+                    class="card-img-top img-fluid" alt="Сакура Харуно">
+
+        <p>
+            Сакура Учиха (яп. うちはサクラ, Учиха Сакура, урождённая Харуно (яп. 春野)) — куноичи из Скрытого Листа.
+                     Став частью Команды 7, Сакура быстро осознаёт свою неподготовленность к суровой жизни шиноби.
+                      Тем не менее, после прохождения тренировок под руководством Саннина Цунаде, она преодолевает это и становится квалифицированным ниндзя-медиком.
+                       В конце манги становится женой Саске, а позже рожает от него дочь Сараду.
+        </p>
+        <p>
+          <span data-bs-toggle="popover" data-bs-trigger="hover" title="Факт" data-bs-content="В конце манги становится женой Саске.">
+            Интересный факт
+          </span>
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+ 
+
+
+
+    <!-- Карточка 4 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://pm1.aminoapps.com/6917/e745da93c43e1ded0d9c07440c4b0da98145e554r1-1280-720v2_00.jpg"
+             class="card-img-top img-fluid" alt="Какаши">
+        <div class="card-body">
+          <h5 class="card-title">Какаши Хатаке</h5>
+          <p class="card-text">Является одним из самых талантливых ниндзя Конохи...</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKakasi">Подробнее</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Модальное окно для Какаши -->
+<div class="modal fade" id="modalKakasi" tabindex="-1" aria-labelledby="modalKakasiLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      <!-- Заголовок модалки -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalKakasiLabel">Какаши Хатаке</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+
+      <!-- Основной контент модалки -->
+      <div class="modal-body">
+        <img src="https://pm1.aminoapps.com/6917/e745da93c43e1ded0d9c07440c4b0da98145e554r1-1280-720v2_00.jpg"
+             class="card-img-top img-fluid" alt="Какаши">
+
+        <p>
+            Какаши Хатаке (яп. はたけ カカシ Хатакэ Какащи) — шиноби Скрытого Листа из клана Хатаке. 
+                    Более известный как Какаши Шарингана (яп. 写輪眼のカカシ, Щаринган но Какащи), благодаря подарку Обито Учиха.
+                     Является одним из самых талантливых ниндзя Конохи. В прошлом капитан Анбу, Какаши возглавляет Команду 7.
+                      После окончания Четвёртой Мировой Войны Шиноби Какаши становится Шестым Хокаге Конохи (яп. 六代目火影, Рокудаймэ Хокаге; досл. Шестая Тень Огня).
+        </p>
+        <p>
+          <span data-bs-toggle="popover" data-bs-trigger="hover" title="Факт" data-bs-content="Является одним из самых талантливых ниндзя Конохи.">
+            Интересный факт
+          </span>
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- Карточка 5 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://sun9-13.userapi.com/s/v1/if2/VVY2vIdTkbD9e6wxpxRVgzjY2nqXGj1bxsb7B_ZnDO8drzExNHJh8vbKTr77b37BAMcTufQYZZ9Wkg7mdsIaZvHX.jpg?quality=95&as=32x18,48x27,72x40,108x61,160x90,240x135,360x202,480x270,540x304,640x360,720x405,1080x607,1200x675&from=bu&cs=1080x0"
+             class="card-img-top img-fluid" alt="Джирая">
+        <div class="card-body">
+          <h5 class="card-title">Джирая</h5>
+          <p class="card-text">Прославившийся как отшельник...</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJira">Подробнее</button>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Модальное окно для Джирайи -->
+<div class="modal fade" id="modalJira" tabindex="-1" aria-labelledby="modalJiraLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      <!-- Заголовок модалки -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalJiraLabel">Джирайя</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+
+      <!-- Основной контент модалки -->
+      <div class="modal-body">
+                <img src="https://sun9-13.userapi.com/s/v1/if2/VVY2vIdTkbD9e6wxpxRVgzjY2nqXGj1bxsb7B_ZnDO8drzExNHJh8vbKTr77b37BAMcTufQYZZ9Wkg7mdsIaZvHX.jpg?quality=95&as=32x18,48x27,72x40,108x61,160x90,240x135,360x202,480x270,540x304,640x360,720x405,1080x607,1200x675&from=bu&cs=1080x0"
+             class="card-img-top img-fluid" alt="Джирая">
+        <p>
+            Джирайя (яп. 自来也, Джирайя) был одним из трех легендарных Саннинов Конохагакуре.
+                     Прославившийся как отшельник и извращенец с изумительными способностями ниндзя, Джирайя путешествовал по миру в поисках знаний, которые могут помочь его друзьям, писал различные
+                      романы и исследовал мир во всей полноте. Впоследствии, все его знания и идеалы перешли к его крестнику и последнему ученику, Наруто Узумаки.
+                       Он погиб, сражаясь с Пейном, в Деревне Скрытого Дождя.
+        </p>
+        <p>
+          <span data-bs-toggle="popover" data-bs-trigger="hover" title="Факт" data-bs-content="Был одним из трех легендарных Саннинов Конохагакуре.">
+            Интересный факт
+          </span>
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Карточка 6 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-h0ht-p-kartinki-vopros-na-prozrachnom-fone-6.png"
+             class="card-img-top img-fluid" alt="Coming soon">
+        <div class="card-body">
+          <h5 class="card-title">Coming soon</h5>
+          <p class="card-text">Blah blah blah...</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSoon">Подробнее</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Модальное окно шаблон -->
+<div class="modal fade" id="modalSoon" tabindex="-1" aria-labelledby="modalSoonLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      <!-- Заголовок модалки -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSoonLabel">ИмяИмя</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+
+      <!-- Основной контент модалки -->
+      <div class="modal-body">
+                <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-h0ht-p-kartinki-vopros-na-prozrachnom-fone-6.png"
+             class="card-img-top img-fluid" alt="Coming soon">
+        <p>
+            Текст в модалке
+        </p>
+        <p>
+          <span data-bs-toggle="popover" data-bs-trigger="hover" title="Факт" data-bs-content="Текст в в Интересном факте">
+            Интересный факт
+          </span>
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+        
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 row-cols-xl-3 gx-3 gy-5">
+    @foreach($cards as $card)
+      <div class="col">
+        <div class="card h-100">
+          @if($card->image)
+            <img src="{{ asset('storage/' . $card->image) }}" class="card-img-top img-fluid" alt="{{ $card->title }}">
+          @endif
+          <div class="card-body">
+            <h5 class="card-title">{{ $card->title }}</h5>
+            <p class="card-text">{{ $card->description }}</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard{{ $card->id }}">
+              Подробнее
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно карточки -->
+      <div class="modal fade" id="modalCard{{ $card->id }}" tabindex="-1" aria-labelledby="modalCardLabel{{ $card->id }}" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCardLabel{{ $card->id }}">{{ $card->title }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              @if($card->image)
+                <img src="{{ asset('storage/' . $card->image) }}" class="img-fluid mb-3" alt="{{ $card->title }}">
+              @endif
+              <p>{{ $card->description }}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    @endforeach
+  </div>
+</div>
+
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" style="max-width: 300px;">
+    <div class="d-flex">
+      <div class="me-3 d-flex align-items-center">
+        <i class="fas fa-spinner fa-spin fa-2x"></i>
+      </div>
+      <div class="toast-body">
+        Загрузка...
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-white">
+    <div>Филютин Арсений</div>
+    <div class="mt-2">
+      <button class="footer-button me-2"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg" width="30" alt="Vk"></button>
+      <button class="footer-button me-2"><img src="https://pngimg.com/uploads/telegram/telegram_PNG22.png" width="30" alt="Tg"></button>
+      <button class="footer-button"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" width="40" alt="YT"></button>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
