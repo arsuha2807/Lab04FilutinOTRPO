@@ -11,7 +11,7 @@ mix.js('resources/js/main.js', 'public/js')
    mix.webpackConfig({
   resolve: {
     extensions: ['.js', '.jsx', '.vue', '.json', '.scss', '.sass', '.css']
-  }
+  } 
 })
    .sourceMaps()
    .browserSync({
@@ -23,3 +23,4 @@ mix.js('resources/js/main.js', 'public/js')
            'public/css/**/*.css'
        ]
    });
+

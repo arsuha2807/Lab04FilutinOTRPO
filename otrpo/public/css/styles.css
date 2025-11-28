@@ -12914,6 +12914,9 @@ textarea.form-control-lg {
   }
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
 }
@@ -12965,7 +12968,7 @@ nav.navbar .header-button:active {
 }
 
 .container {
-  margin-bottom: 55px;
+  flex-grow: 1;
 }
 
 .title {
@@ -12973,23 +12976,37 @@ nav.navbar .header-button:active {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   max-width: 320px;
-  margin: 0;
   height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   transition: 0.3s;
-  padding: 2px 5px;
-}
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 .card img {
   width: 100%;
   height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px 5px 0 0;
+  margin: 5px auto;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px 15px;
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+.card-body button {
+  margin-top: auto;
 }
 
 .card:nth-of-type(5n + 1) {
@@ -13041,7 +13058,6 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 45rem;
-  padding: 5px 0;
   position: relative;
   width: 100%;
   background-color: #c32f27;
@@ -13051,6 +13067,9 @@ footer {
   outline: none;
   box-shadow: none;
   z-index: 1;
+  flex-shrink: 0;
+  margin-bottom: 0 !important;
+  padding: 10px 20px 10px 20px !important;
 }
 footer::before {
   content: "";
@@ -13096,12 +13115,9 @@ footer .footer-button {
 }
 
 html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
