@@ -3,9 +3,11 @@
 @section('content')
 <div class="container mt-4">
     <h1>Карточки</h1>
-    
-    <a href="{{ route('cards.create') }}" class="btn btn-primary mb-3">Добавить карточку</a>
-    
+    <div>
+        <a href="{{ route('index') }}" class="btn btn-outline-secondary me-2">← На главную</a>
+        <a href="{{ route('cards.create') }}" class="btn btn-primary">Добавить карточку</a>
+    </div>
+
     <div class="row row-cols-1 row-cols-md-3 g-3">
         @foreach($cards as $card)
             <div class="col">
